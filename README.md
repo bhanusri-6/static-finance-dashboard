@@ -1,16 +1,66 @@
-# React + Vite
+# Finance Dashboard UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple finance dashboard built as part of a frontend assignment.  
+It allows users to view their financial summary, track transactions, and understand spending patterns.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Dashboard overview with total balance, income, and expenses
+- Role-based UI (Viewer / Admin)
+- Income vs Expense chart (custom built)
+- Transactions table with search functionality
+- Add transaction (Admin only)
+- Basic insights (top spending category)
+- Data persistence using localStorage
+- Export transactions as JSON
+- Dark mode toggle
+- Fully responsive design
+- Basic hover animations for improved user experience
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (Vite)
+- Tailwind CSS
+- JavaScript (ES6)
+
+---
+
+## Approach
+
+- Managed state using React useState
+- Passed data using props for simplicity
+- Used localStorage to persist data without backend
+- Built a custom chart using div elements instead of external libraries
+- Implemented tooltip-based breakdown for better data visibility
+- Added dark mode using Tailwind's dark classes
+
+---
+
+## Role Handling
+
+- Viewer → can only view data
+- Admin → can add new transactions
+  Role switching is handled using a dropdown for demonstration.
+
+---
+
+## Assumptions
+
+- Data is static and stored locally
+- No backend integration is used
+- Focus is on UI and frontend logic
+
+---
+
+## How to Run
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/bhanusri-6/static-finance-dashboard.git
+```
+
